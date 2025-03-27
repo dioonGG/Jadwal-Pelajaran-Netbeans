@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7877a18e-b11b-4cd2-82e2-ac3e05db0e33">
+	<property name="ireport.zoom" value="1.3310000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_guru.`id_guru` AS tb_guru_id_guru,
+     tb_guru.`nip` AS tb_guru_nip,
+     tb_guru.`nama_guru` AS tb_guru_nama_guru,
+     tb_guru.`tempat_lahir` AS tb_guru_tempat_lahir,
+     tb_guru.`tgl_lahir` AS tb_guru_tgl_lahir,
+     tb_guru.`alamat` AS tb_guru_alamat,
+     tb_guru.`no_telepon` AS tb_guru_no_telepon
+FROM
+     `tb_guru` tb_guru]]>
+	</queryString>
+	<field name="tb_guru_id_guru" class="java.lang.Integer"/>
+	<field name="tb_guru_nip" class="java.lang.Integer"/>
+	<field name="tb_guru_nama_guru" class="java.lang.String"/>
+	<field name="tb_guru_tempat_lahir" class="java.lang.String"/>
+	<field name="tb_guru_tgl_lahir" class="java.lang.String"/>
+	<field name="tb_guru_alamat" class="java.lang.String"/>
+	<field name="tb_guru_no_telepon" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="-20" width="555" height="92" backcolor="#006699" uuid="5ac6336b-4cef-43d5-bec1-f6fac02bd5d5"/>
+				<staticText>
+					<reportElement x="208" y="0" width="241" height="43" forecolor="#FFFFFF" uuid="caaa3218-f3ba-4cd2-8abb-67674bef942e"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[MTS ISTIQLAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="99" y="43" width="453" height="43" forecolor="#FFFFFF" uuid="8e7e1afc-114a-4c7b-9e64-cc382eec26c5"/>
+					<textElement textAlignment="Center">
+						<font size="15" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Taman Wijaya Kusuma, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710]]></text>
+				</staticText>
+				<image>
+					<reportElement x="11" y="3" width="88" height="83" uuid="40d81c93-fe66-4e4f-a995-6942fbd16167"/>
+					<imageExpression><![CDATA["E:\\Projecct\\KKP\\PenjadwalanPelajaran-master\\src\\penjadwalanpelajaran\\gambar\\mts.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="24">
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" forecolor="#666666" uuid="13956b49-3110-476e-8b6f-f2d7add45f92"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="84" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="689bd3a9-064e-443e-803c-8d609623db55"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="84" y="0" width="95" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="206d62d7-14ca-403c-8629-d3f203c1d50b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="179" y="0" width="122" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a320c314-cae0-46db-9512-dbd318a46a6b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL LAHIR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="301" y="0" width="137" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="8ea1b7e3-830c-46bd-ab82-79b515d142fe"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="438" y="0" width="117" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="0e5c4153-9c79-44aa-aca5-53bb43b0b21e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO TELP]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" forecolor="#666666" uuid="f2670a85-0b74-4e90-92be-d1f70d2a2ecf"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="90c760b6-7337-42f6-a0b9-29092db73f02"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="84" height="20" uuid="a2d1fbaf-4321-4b73-9ff1-8e397d197e2d"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_guru_nip}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="84" y="0" width="95" height="20" uuid="a1b466a8-a010-4304-8445-6565fc3e8159"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_guru_nama_guru}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="301" y="0" width="137" height="20" uuid="c2a4b50b-7d1d-4959-b049-cc42b21c7c76"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_guru_alamat}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="438" y="0" width="117" height="20" uuid="e2e89491-a836-49fb-b7af-2f588e4caf33"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_guru_no_telepon}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="179" y="0" width="122" height="20" uuid="c94251da-7f88-43d4-99ec-98f45a0f086e"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_guru_tgl_lahir}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="105">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="92" width="515" height="13" backcolor="#E6E6E6" uuid="a481a59e-3fce-4f66-8c2b-1210040c8e4e"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="92" width="40" height="13" backcolor="#E6E6E6" uuid="6bfbf483-d1d7-47fd-b59f-d6cf7d49687b"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="322" y="13" width="48" height="16" forecolor="#000000" uuid="46457f4d-8733-4989-87d1-403b1ebea917"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="66" width="63" height="16" forecolor="#000000" uuid="8db12732-9144-4704-9986-6a0d5a3ae9d6"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Koordinator]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="370" y="13" width="182" height="16" uuid="16e7f430-45a0-4156-9308-2aa0d6ad440a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="330" y="50" width="119" height="16" forecolor="#000000" uuid="a3a03350-339b-4804-a20c-7c573df2ad91"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Erni Kurniasih, M.Pd]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

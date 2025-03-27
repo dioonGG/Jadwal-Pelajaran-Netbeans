@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f42b321c-6721-4452-a53d-4016e1d4acfd">
+	<property name="ireport.zoom" value="1.6105100000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_mapel.`id_mapel` AS tb_mapel_id_mapel,
+     tb_mapel.`mapel` AS tb_mapel_mapel,
+     tb_mapel.`nama_guru` AS tb_mapel_nama_guru,
+     tb_mapel.`kode_guru` AS tb_mapel_kode_guru
+FROM
+     `tb_mapel` tb_mapel]]>
+	</queryString>
+	<field name="tb_mapel_id_mapel" class="java.lang.Integer"/>
+	<field name="tb_mapel_mapel" class="java.lang.String"/>
+	<field name="tb_mapel_nama_guru" class="java.lang.String"/>
+	<field name="tb_mapel_kode_guru" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="-20" width="555" height="92" backcolor="#006699" uuid="afb0244d-6c9e-4bbc-b1f6-3232a33912fe"/>
+				<staticText>
+					<reportElement x="208" y="0" width="241" height="43" forecolor="#FFFFFF" uuid="f73cd5b3-1f87-43dc-8dc5-233cd39561b8"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[MTS ISTIQLAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="99" y="43" width="453" height="43" forecolor="#FFFFFF" uuid="7ddf6928-e380-4092-9ae7-7299797846b7"/>
+					<textElement textAlignment="Center">
+						<font size="15" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Taman Wijaya Kusuma, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710]]></text>
+				</staticText>
+				<image>
+					<reportElement x="11" y="3" width="88" height="83" uuid="b583712c-fea0-475f-864a-995e46649fed"/>
+					<imageExpression><![CDATA["E:\\Projecct\\KKP\\PenjadwalanPelajaran-master\\src\\penjadwalanpelajaran\\gambar\\mts.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22">
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" forecolor="#666666" uuid="63ee9a86-053c-475c-9f3b-e0d73e6c29fc"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="03f9c1a5-258c-4b5e-9c4f-7d53666a2a59"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID MAPEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="138" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="c89b7066-efe4-421f-9d1c-eff3e2701ec1"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MATA PELAJARAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="c14ea86a-4342-4c9b-809f-f2af2ee97f24"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA GURU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="414" y="0" width="141" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="cda60b3d-b128-4949-8087-ebd8d3569278"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE GURU]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" forecolor="#666666" uuid="88cbb527-0261-4513-8397-e4183df836fa"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="7872b6db-ffc2-4f63-b539-dd250003dcaa"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="138" height="20" uuid="b125d664-d1de-4de9-8e65-36c8dae38c0a"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_mapel_id_mapel}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="138" y="0" width="138" height="20" uuid="e8c57802-a389-425f-b4fa-55d427fdb491"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_mapel_mapel}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="276" y="0" width="138" height="20" uuid="bd289fdd-4203-46e6-997a-86bda52c129e"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_mapel_nama_guru}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="414" y="0" width="141" height="20" uuid="37adf7c4-1e12-438e-9068-a78e06cc6814"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_mapel_kode_guru}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="116">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="103" width="515" height="13" backcolor="#E6E6E6" uuid="6ccbfdba-26a2-430d-ac0c-26520e1899b1"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="103" width="40" height="13" backcolor="#E6E6E6" uuid="c3d31525-643f-4d31-8abb-f19dae5b9e17"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="357" y="70" width="70" height="16" forecolor="#000000" uuid="927949f8-4caf-4137-be59-9a918d7f84f1"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Koordinator]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="17" width="48" height="16" forecolor="#000000" uuid="3bab3f39-caf4-4de6-a168-7db9a047c704"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="373" y="17" width="182" height="16" uuid="2402e67a-f3e1-48ba-af90-43bdde6c62b1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="330" y="54" width="119" height="16" forecolor="#000000" uuid="fedd19e7-afb1-452a-9690-c8e5828394b3"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Erni Kurniasih, M.Pd]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
